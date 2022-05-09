@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap");
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    font-family: cairo;
+    direction: ltr;
+}
+
+::-webkit-scrollbar {
+    width: 0.7em;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    margin-block: 0;
+    /* border-radius: 10px; */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #d9d9d9;
+    /* border-radius: 10px; */
+    width: 0.4em;
+    transition: 0.5s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #508573;
+}
+
+
+/* navbar */
+
+.navbar {
+    padding: 0 !important;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #508573;
+}
+
+.navbar .navbet {
+    display: flex;
+    width: 85%;
+}
+
+@media (max-width: 550px) {
+    .navbar {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1260px) {
+    .navbar .navbet {
+        width: 95%;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar .navbar-collapse {
+        position: absolute;
+        z-index: 100;
+        background-color: rgb(255, 255, 255);
+        height: 100vh;
+        width: 100%;
+        margin-top: 9vh;
+    }
+    .navbar .navbar-collapse ul {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .navbar .navbar-collapse ul .nav-item .nav-link {
+        margin: 10px 0px;
+        padding: 0;
+        color: #000;
+        /* background-color: #508573; */
+    }
+    .navbar .navbar-collapse ul li a {
+        color: #000;
+    }
+    .navbar .navbar-collapse form {
+        justify-content: center;
+        flex-direction: column;
+        /* background-color: #508573; */
+        margin-right: 30px;
+    }
+    .navbar .navbet {
+        width: 95%;
+        justify-content: space-between;
+    }
+}
+
+.navbar .logo {
+    background-color: #fff;
+    padding: 5px 30px 5px 5px;
+    /* padding: 5px 30px 5px 10px; */
+    border-top-right-radius: 50px;
+    border-top-left-radius: 0px;
+}
+
+.navbar .logo h6 {
+    width: 230px;
+    line-height: 1.5;
+    text-align: center;
+    color: #bfa379;
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    .navbar .logo h6 {
+        width: 180px;
+        font-size: small;
+    }
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    color: #bfa379;
+}
+
+.navbar form {
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar .fa-search {
+    color: #bfa379;
+}
+
+.navbar form a {
+    color: #bfa379;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.navbar .navbar-collapse form .inp {
+    background-color: #f2f3f4;
+    border-radius: 5px;
+}
+
+.navbar .navbar-collapse form .inp input {
+    background-color: transparent;
+    border: none;
+}
+
+.navbar .navbar-collapse form .inp input:focus {
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+
+.navbar .navbar-collapse form .inp button {
+    border: none;
+    background-color: #bfa379;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 5px;
+}
+
+.navbar .navbar-collapse form .inp .fa-search {
+    margin: 0px 5px;
+    color: #fff;
+}
+
+.navbar .navbar-toggler {
+    border: none;
+}
+
+.navbar .navbar-toggler:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.dropdown-menu li {
+    position: relative;
+}
+
+.nav-item .submenu {
+    display: none;
+    position: absolute;
+    right: 100%;
+    top: -7px;
+}
+
+.nav-item .submenu-left {
+    right: 100%;
+    left: auto;
+}
+
+.dropdown-menu>li:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown-menu>li:hover>.submenu {
+    display: block;
+}
+
+@media (max-width: 992px) {
+    .nav-item .submenu {
+        right: 0%;
+        top: 20px;
+    }
+}
+
+.dropdown-menu {
+    width: 200px;
+    text-align: right;
+}
+
+@media (max-width: 992px) {
+    .dropdown-menu {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.dropdown-menu .dropdown-item {
+    text-align: left;
+}
+
+
+/* activitySection */
+
+section .activitySection h4,
+.program h4,
+.patners h4 {
+    padding-left: 10px;
+    border-left: 5px solid #bfa379;
+    border-right: none;
+}
+
+
+/* about */
+
+.about h4 {
+    margin-left: 10px;
+}
+
+
+/* kindergarteb */
+
+.Kindergarten .card .fa-map-marker-alt,
+.Kindergarten .card .fa-mobile,
+.Kindergarten .card .fa-globe {
+    margin-right: 10px;
+}
+
+
+/* footer */
+
+footer .shape {
+    left: 0%;
+    border-top-right-radius: 200px;
+    border-top-left-radius: 0px;
+}
